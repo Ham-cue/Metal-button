@@ -1,0 +1,56 @@
+h1{
+    color: azure;
+    font-size: 3em;
+}
+
+div{
+    border: 3px solid; 
+    padding: 30px ;
+    border-radius: 12px;
+    float: left;
+}
+body{
+    background-image: url(Rock.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+button{
+    padding: 1.2em;
+    background-color: hsl(0, 1%, 30%);
+    color: hsl(0, 0%, 0%); 
+    font-size: 30px;
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+   
+
+@keyframes change{
+    0%{background-color: hsl(51, 100%, 50%); }
+    10%{background-color: hsl(51, 59%, 45%); }
+    30%{background-color: hsla(51, 82%, 30%, 0.404); }
+    50%{background-color: hsl(221, 77%, 24%); }
+    70%{background-color: hsl(182, 74%, 30%); }
+    90%{background-color: hsl(162, 75%, 42%); }
+    100%{background-color: hsl(145, 74%, 52%); }
+}
+
+p{
+    font-size: 2em;
+    animation-name: changes;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes changes {
+        0%{color: hsl(51, 100%, 50%); }
+    10%{color: hsl(51, 59%, 45%); }
+    30%{color: hsla(51, 82%, 30%, 0.404); }
+    50%{color: hsl(221, 77%, 24%); }
+    70%{color: hsl(182, 74%, 30%); }
+    90%{color: hsl(162, 75%, 42%); }
+    100%{color: hsl(145, 74%, 52%); }
+}
